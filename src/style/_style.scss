@@ -1,0 +1,374 @@
+*
+{
+  font-family: "Open Sans";
+}
+.button_normal_icon
+{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: $--green;
+  color: var(--base-white, #FFF);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 200ms;
+  &:hover{
+    background: #81D2BC;
+    }
+  
+}
+.button_normal
+{
+  display: flex;
+  padding: 16px 36px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: $--green;
+  color: var(--base-white, #FFF);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 200ms;
+  &:hover{
+  background: #81D2BC;
+
+  }
+  
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  text-decoration: none !important;
+  transition: 200ms;
+  &:hover{
+    color: #000;
+    text-decoration: none !important;
+  }
+}
+
+header
+{
+  white-space: nowrap;
+  .row{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  .header__number
+  {
+    font-weight: bold;
+  }
+  .menu
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    transition: 200ms;
+    a{
+      &:hover{
+        color: $--green;
+      }
+    }
+    .menu__links
+    {
+      
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+  .buttons_menu
+  {
+    gap: 15px;
+    display: flex;
+  }
+  .sing_in
+  {
+    display: flex;
+    gap: 10px;
+  }
+  }
+}
+
+.bold 
+{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+.semibold
+{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.regular
+{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header_search_input
+{
+  display: flex;
+  padding: 14px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 10px;
+  background: var(--gray-background, rgba(47, 43, 67, 0.04));
+}
+
+.search_icon
+{
+    z-index: 2;
+    display: block;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.input_search_block
+{
+  input{
+    padding-left: 2.375rem;
+  }
+}
+
+.button_normal_transparent
+{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  justify-content: center;
+  transition: 200ms;
+  &:hover{
+    color: #FFF;
+    background: #1A77A3;
+  }
+}
+h1
+{
+  font-size: 32px !important;
+}
+
+h3
+{
+  font-size: 16px;
+}
+
+.hot_line
+{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  h1{
+    color: #000;
+  }
+  h3
+  {
+    font-size: 16px;
+  }
+  .hot_line_description
+  {
+    margin-right: 106px;
+    
+    width: 657px;
+    .hot_line_icon_item
+      {
+        display: flex;
+        gap: 10px;
+      }
+    .hot_line_icon
+    {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+    }
+  }
+  .hot_line__quation
+  {
+    margin-top: 30px;
+      gap: 30px;
+      display: flex;
+      a
+      {
+        font-size: 24px;
+        color: $--green;
+        border-bottom: 3px $--green solid;
+      }
+      h4
+      {
+        color: $--gray-medium;
+        margin-top: 5px;
+      }
+
+      
+  }
+}
+h4{
+  font-size: 12px !important;
+}
+h2{
+  font-size: 24px !important;
+}
+.about_help
+{
+  margin-top: 101px;
+  h1{
+    color: black;
+  }
+}
+
+.consultation
+{
+  margin-top: 80px;
+}
+.consultation_square
+{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  .consultation_square_container
+  {
+    border-radius: 20px;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    display: flex;
+    padding: 20px;
+    margin-top: 30px;
+    width: 270px;
+    height: 180px;
+    .consultation_square_item
+    {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      a
+      {
+        color: var(--green, #33836E);
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 20px; 
+      }
+
+    }
+    
+  }
+}
+
+.consultation_square_container:nth-child(1) {
+  /* Отступ от второго блока */
+  a
+  {
+    margin-top: 0px !important; 
+  }
+}
+
+.call_center{
+  background-image: url(/public/images/call_centre_serqual.svg);
+  background-repeat:no-repeat;
+  background-size:contain;
+  height: 200px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  .call_center__text
+  {
+    h3{
+      color: var(--base-white, #FFF);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    h2
+    {
+      color: var(--base-white, #FFF);
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -1.26px;
+    }
+    
+  }
+  .call_center_circles
+    {
+      display: flex;
+      flex-direction: column;
+      margin-left: 116px;
+      h4{
+        color: var(--base-white, #FFF);
+        text-align: left;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+}
+
+.help_you
+{
+  .help_you__item_container
+    {
+      display: flex;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+
+  .help_you__item
+  {
+    display: flex;
+    width: 560px;
+    height: 180px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    .help_you__item_circle
+    {
+      display: flex;
+      padding: 35px;
+      align-items: center;
+      border-radius: 9999px;
+      background: #EBF2F0;
+      img
+      {
+        width: 40px;
+      }
+    }
+    .help_you__item_description
+    {
+      width: 320px;
+      margin-left: 20px;
+    }
+  }
+  
+    }
+  
+}
+
+
