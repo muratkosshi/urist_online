@@ -37,6 +37,7 @@
   font-weight: 600;
   line-height: normal;
   transition: 200ms;
+  justify-content: center;
   &:hover{
   background: #81D2BC;
 
@@ -193,17 +194,20 @@ h3
   {
     margin-right: 106px;
     
-    width: 657px;
-    .hot_line_icon_item
-      {
-        display: flex;
-        gap: 10px;
-      }
+    width: 100%;
+    
     .hot_line_icon
     {
+      flex-wrap: wrap;
       display: flex;
       gap: 30px;
       margin-top: 40px;
+      .hot_line_icon_item
+      {
+        display: flex;
+        gap: 10px;
+        
+      }
     }
   }
   .hot_line__quation
@@ -253,13 +257,16 @@ h2{
   .consultation_square_container
   {
     border-radius: 20px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
     border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
     display: flex;
     padding: 20px;
     margin-top: 30px;
-    width: 270px;
+    width: 214px;
     height: 180px;
-    .consultation_square_item
+    flex-direction: column;
+    justify-content: space-between;
+    .consultation_square_item_up
     {
       display: flex;
       gap: 15px;
@@ -290,13 +297,17 @@ h2{
 }
 
 .call_center{
-  background-image: url(/public/images/call_centre_serqual.svg);
-  background-repeat:no-repeat;
-  background-size:contain;
-  height: 200px;
-  margin-top: 80px;
-  display: flex;
-  align-items: center;
+  // background-image: url(/public/images/call_centre_serqual.svg);
+  border-radius: 20px;
+  background: var(--green, #33836E);
+  background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
   .call_center__text
   {
     h3{
@@ -596,3 +607,184 @@ button
         line-height: normal;
       }
     }
+.reviews{
+  margin-top: 80px;
+  .reviews_slider_item_container
+  {
+    display: flex;
+    width: 367px;
+    min-height: 421px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    .review_avatar
+    {
+      margin-bottom: 24px;
+      display: flex;
+      gap: 15px;
+      .review_avatar_circle
+      {
+        border-radius: 999px;
+        background: #115B82;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .review_question
+    {
+      h3
+      {
+        color: var(--green, #33836E);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+      }
+    }
+  
+  }
+
+  .reviews_slider_block
+  {
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+}
+
+.lawyers_portal
+{
+  display: none !important;
+  margin-top: 80px;
+  .row
+  {
+    gap: 20px;
+  }
+  .lawyers_form
+  {
+    display: inline-flex;
+    height: 617px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--green, #33836E);
+  }
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  button
+  {
+    display: flex;
+    width: 463px;
+    padding: 16px 36px 18px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E0ECE9;
+    color: var(--green, #33836E);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .lawyers_portal_items
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .lawyers_item_protal_container
+    {
+      display: flex;
+      width: 463px;
+      padding: 20px;
+      align-items: center;
+      gap: 20px;
+      border-radius: 20px;
+      border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+      .lawyers_item_protal
+      {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint_lg)
+{
+  .header_desktop
+  {
+    display: none;
+  }
+  .hot_line
+  {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+    .hot_line__quation
+    {
+      margin-top: 30px;
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .hot_line__quation_number
+      {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .hot_line
+  {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    .hot_line__quation
+    {
+      margin-top: 30px;
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .hot_line__quation_number
+      {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+    }
+  }
+
+
+  .call_center
+  {
+
+  }
+  
+}
+
+
+    
