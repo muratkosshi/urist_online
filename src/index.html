@@ -11,6 +11,24 @@
     <title>Title</title>
 </head>
 <body>
+  <!--Мобильное меню-->
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mm__bg mm__close"></div>
+  <div class="mm__wrapper" id="mm__wrapper">
+      <div class="mm__header">
+          <span class="close-btn close-btn--red mm__close"></span>
+     <div class=" nav_menu semibold">
+      <a href="#reviews"><h2>Отзывы</h2></a>
+      <a href="#"><h2>Вопросы</h2></a>
+      <a href="#specialties"><h2>Наши юристы</h2></a>
+      <a href="#"><h2>Статьи</h2></a>
+      <a href="#"><h2>Контакты </h2></a>
+    </div>
+            
+     
+      </div>
+  </div>
+</div>
    <header class="header_desktop container">
         <div class="row">
             <img class="header_logo" src="/public/images/OL06ZA1-ai.svg" alt="" class="col-2.5">
@@ -46,9 +64,9 @@
           </div>
           
           <div class="menu__links">
-            <a href="#">Отзывы</a>
+            <a href="#reviews">Отзывы</a>
             <a href="#">Вопросы</a>
-            <a href="#">Наши юристы</a>
+            <a href="#specialties">Наши юристы</a>
             <a href="#">Статьи</a>
             <a href="#">Контакты</a>
           </div>
@@ -60,7 +78,24 @@
         </div>
     </header>
     <header class="header_mobile container">
-
+      <button class="hamburger" id="mobile-menu-btn">
+        <div class="btn__hamb">
+            <div></div>
+        </div>
+    </button>
+      <a href="#">
+        <img class="logo_mobile" src="/public/images/OL06ZA1-ai.svg" alt="">
+      </a>
+          
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4697 16.4697C16.7626 16.1768 17.2374 16.1768 17.5303 16.4697L21.5303 20.4697C21.8232 20.7626 21.8232 21.2374 21.5303 21.5303C21.2374 21.8232 20.7626 21.8232 20.4697 21.5303L16.4697 17.5303C16.1768 17.2374 16.1768 16.7626 16.4697 16.4697Z" fill="#33836E" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3.75C6.99594 3.75 3.75 6.99594 3.75 11C3.75 15.0041 6.99594 18.25 11 18.25C13.0057 18.25 14.82 17.4365 16.1333 16.1197C17.4421 14.8074 18.25 12.9988 18.25 11C18.25 6.99594 15.0041 3.75 11 3.75ZM2.25 11C2.25 6.16751 6.16751 2.25 11 2.25C15.8325 2.25 19.75 6.16751 19.75 11C19.75 13.4118 18.7732 15.597 17.1954 17.179C15.6121 18.7664 13.4202 19.75 11 19.75C6.16751 19.75 2.25 15.8325 2.25 11Z" fill="#33836E" />
+              </svg>
+              
+            <img src="/public/images/user.svg" alt="">
+          </div>
+          
     </header>
 
     <section class="hot_line container">
@@ -219,7 +254,7 @@
     </section>
 
     <section class="why_choise container">
-      <div class="why_choise__description col-6"><h1 class="bold">Почему стоит выбрать нас?</h1>
+      <div class="why_choise__description"><h1 class="bold">Почему стоит выбрать нас?</h1>
         <h3 class="regular">Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос</h3>
         <div class="why_choise__numbers">
           <div>
@@ -263,7 +298,7 @@
         
     </section>
 
-    <section class="specialties container">
+    <section class="specialties container" id="specialties">
       <h2 class="bold">Специальности наших юристов</h2>
       <div class="specialties_blocks">
         <div class="specialties__items_container">
@@ -332,7 +367,7 @@
       </div>
      
     </section>
-    <section class="ask_question_banner container">
+    <section class="ask_question_banner container" >
       <div class="text"><h1 class="bold">Задайте вопрос юристу бесплатно</h1></div>
       <div class="number_container_form">
         <div class="number__form">
@@ -360,7 +395,7 @@
       <button>Показать весь текст</button>
       </section>
 
-      <section class="reviews container">
+      <section class="reviews container" id="reviews">
         <h2>Отзывы наших клиентов</h2>
         <div class="reviews_slider_block">
           <div class="reviews_slider_item_container">
