@@ -15,7 +15,10 @@
 <div class="mobile-menu" id="mobile-menu">
   <div class="mm__bg mm__close"></div>
   <div class="mm__wrapper" id="mm__wrapper">
-      <div class="mm__header">
+      <div class="mm__header" style="
+      display: flex;
+      justify-content: center;
+  ">
           <span class="close-btn close-btn--red mm__close"></span>
      <div class="nav_menu ">
       
@@ -23,14 +26,18 @@
       <h2 class="bold">Меню</h2>
       <hr/>
       <div class="nav_menu__links semibold">
-        <a href="#reviews"><h3>Задать вопрос</h3></a>
-        <a href="#"><h3>Консультация по телефону</h3></a>
-        <a href="#specialties"><h3>Отзывы</h3></a>
-        <a href="#"><h3>Наши юристы</h3></a>
-        <a href="#"><h3>Статьи</h3></a>
-        <a href="#"><h3>Вопросы</h3></a>
+        <a href="#hot_line"><h3>Задать вопрос</h3></a>
+        <a href="#about_help">Описание</a>
+        <a href="#call_center"><h3>Консультация по телефону</h3></a>
+        <a href="#help_you"><h3>Как мы сможем помочь вам?</h3></a>
+        <a href="#why_choise"><h3>Почему стоит выбрать нас?</h3></a>
+        <a href="#specialties"><h3>Наши юристы</h3></a>
+        <a href="#ask_question_banner"><h3>Вопросы</h3></a>
+        <a href="#reviews"><h3>Отзывы</h3></a>
       </div>
-      <div><span class="bold"><img src="/public/images/phone.svg" alt="">8 700 302-92-70</span>
+      <div><span class="bold"><img src="/public/images/phone.svg" style="
+        margin-right: 20px;
+    " alt="">8 700 302-92-70</span>
       <h4>Бесплатный звонок юристу</h4></div>
       <div style="display: flex"> <button class="button_normal_transparent" style="margin-right: 15px;"><img src="/public/images/telegram.svg" alt=""></button> <button class="button_normal_transparent">Заказать звонок</button></div>
    
@@ -109,7 +116,7 @@
           
     </header>
 
-    <section class="hot_line container">
+    <section class="hot_line container" id="hot_line">
       <div class="hot_line_description">
         <h1 class="bold">Горячая линия по оказанию юридической помощи онлайн</h1>
         <h3>Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «100 Юристов», вы можете рассчитывать на прозрачные, понятные условия сотрудничества</h3>
@@ -131,7 +138,7 @@
     
     
     </section>
-    <section class="about_help container">
+    <section class="about_help container" id="about_help">
       <h1 class="bold">Юридическая помощь</h1>
         <h3>Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос. Теперь не нужно записываться на офлайн-прием и тратить время на поездку и очереди перед кабинетом.
           Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «uplawyers», вы можете рассчитывать на прозрачные, понятные условия сотрудничества.</h3>
@@ -140,7 +147,7 @@
     <section class="consultation container">
       <h1 class="bold">Как получить бесплатную юридическую консультацию?</h1>
       <h3>Задайте вопрос юристу бесплатно круглосуточно и без регистрации</h3>
-      <div class="consultation_square row">
+      <div class="consultation_square container">
         <div class="consultation_square_container ">
           <div class="consultation_square_item_up">
             <img src="/public/images/phone.svg" alt="">
@@ -212,22 +219,18 @@
      
     </section>
 
-    <section class="call_center container">
+    <section class="call_center container" id="call_center">
      
      <img src="/public/images/woman-working-call-center 1.svg" alt="">
      <div class="call_center__text">
       <h3>Звоните, мы работаем 24/7</h3>
       <h2 class="bold">8 800 302-92-70</h2>
      </div>
-     <div class="call_center_circles">
-     
-      <h4>64 юриста сейчас онлайн</h4>
-      <img src="/public/images/circles.svg" alt="">
-     </div>
+    
     </section>
-    <section class="help_you container">
+    <section class="help_you container" id="help_you">
       <h1 class="bold">Как мы сможем помочь вам?</h1>
-      <div class="help_you__item_container row">
+      <div class="help_you__item_container">
       <div class="help_you__item">
         <div class="help_you__item_circle">
           
@@ -264,7 +267,7 @@
       </div>
     </section>
 
-    <section class="why_choise container">
+    <section class="why_choise container" id="why_choise">
       <div class="why_choise__description"><h1 class="bold">Почему стоит выбрать нас?</h1>
         <h3 class="regular">Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос</h3>
         <div class="why_choise__numbers">
@@ -378,7 +381,7 @@
       </div>
      
     </section>
-    <section class="ask_question_banner container" >
+    <section class="ask_question_banner container" id="ask_question_banner">
       <div class="text"><h1 class="bold">Задайте вопрос юристу бесплатно</h1></div>
       <div class="number_container_form">
         <div class="number__form">

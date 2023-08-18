@@ -253,6 +253,7 @@ h2{
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 
   .consultation_square_container
   {
@@ -262,7 +263,7 @@ h2{
     display: flex;
     padding: 20px;
     margin-top: 30px;
-    width: 261px;
+    width: 23%;
     height: 180px;
     flex-direction: column;
     justify-content: space-between;
@@ -411,7 +412,7 @@ h2{
 
 .callback_banner_form
 {
-    height: 200px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 20px;
     background: #33836E;
@@ -819,6 +820,28 @@ button
 .help_you__item
 {
   width: 100% !important;
+  display: flex;
+  padding: 20px !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start !important;
+  gap: 15px;
+  align-self: stretch;
+  .help_you__item_circle
+  {
+    display: flex !important;
+padding: 15px !important;
+align-items: center !important;
+gap: 10px !important;
+img{
+  width: 24px !important;
+}
+
+  }
+  .help_you__item_description{
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
 }
   .ask_question_banner
   {
@@ -845,7 +868,7 @@ button
   }
 
   .callback_banner_form {
-    height: 403px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 20px;
     background: #33836E;
@@ -924,19 +947,27 @@ button
 
   .call_center
   {
-    height: 294px;
+    img
+    {
+      width: 80%;
+    
+    }
+    
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: flex-start;
     position: relative;
-    .call_center__text{
+    .call_center__text
+    {
       display: flex;
-    width: 100%;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    margin-top: 4px;
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      margin-top: 4px;
+      text-align: right;
     }
     .call_center_circles
     {
@@ -1112,7 +1143,6 @@ button
     align-items: flex-start;
     margin-top: 50px;
     text-align: center;
-    margin-left: 30px;
     color: black;
     .nav_menu__links
     {
@@ -1139,4 +1169,20 @@ hr {
   margin: 1em 0;
   padding: 0;
   width: 80%;
+}
+
+@media (max-width: 420px)
+{
+  .consultation_square_container 
+  {
+    width: 100% !important;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+section
+{
+  scroll-margin-top: 97px;
 }
