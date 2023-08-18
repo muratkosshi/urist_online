@@ -38,6 +38,7 @@ $(document).ready(function () {
                 settings:{
                     slidesToShow:1,
                     arrows: false,
+                    dots: true,
                 }
             }
         ]
@@ -50,6 +51,7 @@ $(document).ready(function () {
             autoplay: true,
             slidesToShow: 1,
             arrows: false,
+            dots: true
           })
     }
     else{
@@ -58,5 +60,6 @@ $(document).ready(function () {
 
 // Добавляем обработчик события изменения размера окна
 window.addEventListener("resize", handleWindowResize);
+
 
 

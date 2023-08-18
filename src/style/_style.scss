@@ -729,6 +729,21 @@ button
 }
 @media (max-width: $breakpoint_lg)
 {
+  .header_mobile{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: fixed;
+    background-color: #FFF;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    .logo_mobile
+    {
+      width: 100px;
+    }
+  } 
   .header_desktop
   {
     display: none;
@@ -1035,12 +1050,12 @@ button
     transition: all .4s ease-in-out;
     overflow-y: auto;
     position: relative;
-    width: 60%;
+    width: 80%;
     height: 100%;
     z-index: 200;
     touch-action: auto;
     -ms-touch-action: auto;
-    background: $--green; }
+    background: white; }
     @media (min-width: 768px) {
       .mobile-menu .mm__wrapper {
         width: 35%; } }
@@ -1085,20 +1100,43 @@ button
     left: 0; }
   .close-btn:before, .close-btn:after {
     content: "";
-    background: white;
+    background: black;
     position: absolute; }
 .close-btn--red:before, .close-btn--red:after {
-  background: white; }
+  background: black; }
 
   .nav_menu
   {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 50px;
     text-align: center;
+    margin-left: 30px;
+    color: black;
+    .nav_menu__links
+    {
+      display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    }
     a
     {
-      color: white;
+      
     }
   }
+
+.slick-dots li.slick-active button:before {
+    color: $--green !important;
+    opacity: 0.75;
+}
+hr {
+  display: block;
+  height: 3px;
+  border: 0;
+  border-top: 1.7px solid rgb(145, 145, 145);
+  margin: 1em 0;
+  padding: 0;
+  width: 80%;
+}
