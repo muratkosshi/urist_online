@@ -742,7 +742,8 @@ button
     z-index: 5;
     .logo_mobile
     {
-      width: 100px;
+      width: 145px;
+      
     }
   } 
   .header_desktop
@@ -923,7 +924,7 @@ img{
 }
   .hot_line
   {
-    margin-top: 125px;
+    margin-top: 155px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1150,6 +1151,7 @@ img{
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    gap: 15px;
     }
     a
     {
@@ -1184,5 +1186,5 @@ html{
 }
 section
 {
-  scroll-margin-top: 97px;
+  scroll-margin-top: 155px;
 }
