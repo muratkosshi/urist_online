@@ -87,6 +87,7 @@ header
     top: 0;
     background-color: white;
     white-space: nowrap;
+    z-index: 100000;
     a{
       &:hover{
         color: $--green;
