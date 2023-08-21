@@ -51,7 +51,8 @@ $(document).ready(function () {
             autoplay: true,
             slidesToShow: 1,
             arrows: false,
-            dots: true
+            dots: true,
+            adaptiveHeight: true
           })
     }
     else{
