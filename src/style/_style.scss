@@ -180,7 +180,7 @@ h1
 
 h3
 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .hot_line
@@ -236,7 +236,7 @@ h3
   }
 }
 h4{
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 h2{
   font-size: 24px !important;
@@ -364,7 +364,7 @@ h2{
   {
     display: flex;
     width: 48%;
-    height: 180px;
+    height: 230px;
     padding: 30px;
     align-items: center;
     border-radius: 20px;
@@ -488,6 +488,9 @@ button
     flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    h4{
+      font-size: 15px !important;
+    }
   }
   .specialties__item
   {
