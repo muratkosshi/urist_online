@@ -1,615 +1,343 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css.map">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <title>Title</title>
+    <title>Header Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+
+    </style>
 </head>
 <body>
 
-  <!--Мобильное меню-->
-<div class="mobile-menu" id="mobile-menu">
-  <div class="mm__bg mm__close"></div>
-  <div class="mm__wrapper" id="mm__wrapper">
-      <div class="mm__header" style="
-      display: flex;
-      justify-content: center;
-  ">
-          <span class="close-btn close-btn--red mm__close"></span>
-     <div class="nav_menu ">
-      
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <div class="phone_nav">
+        <img src="./../public/images/phone_nav.svg" alt="">
+        <a class="navbar-brand" href="tel:+7 777 537 96 91">+7 777 537 96 91</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Наши услуги</a>
+                <a class="nav-item nav-link" href="#online_consultation">Онлайн консультации</a>
+                <a class="nav-item nav-link" href="#">Тарифы</a>
+                <a class="nav-item nav-link" href="#advantages-section">Преимущества</a>
+                <a class="nav-item nav-link" href="#how-we-work-section">Как мы работаем</a>
+                <a class="nav-item nav-link" href="#testimonials-section">Отзывы</a>
+                <!-- Language Dropdown -->
 
-      <h2 class="bold">Меню</h2>
-      <hr/>
-      <div class="nav_menu__links semibold">
-        <a href="#hot_line"><h3>Задать вопрос</h3></a>
-        <a href="#about_help"><h3>Описание</h3></a>
-        <a href="#call_center"><h3>Консультация по телефону</h3></a>
-        <a href="#help_you"><h3>Как мы сможем помочь вам?</h3></a>
-        <a href="#why_choise"><h3>Почему стоит выбрать нас?</h3></a>
-        <a href="#specialties"><h3>Наши юристы</h3></a>
-        <a href="#ask_question_banner"><h3>Вопросы</h3></a>
-        <a href="#reviews"><h3>Отзывы</h3></a>
-      </div>
-      <div><span class="bold"><img src="/public/images/phone.svg" style="
-        margin-right: 20px;
-    " alt="">8 700 302-92-70</span>
-      <h4>Бесплатный звонок юристу</h4></div>
-      <div style="display: flex"> <button class="button_normal_transparent" style="margin-right: 15px;"><img src="/public/images/telegram.svg" alt=""></button> <button class="button_normal_transparent">Заказать звонок</button></div>
-   
+        </div>
     </div>
-            
-     
-      </div>
-  </div>
-</div>
-   <header class="header_desktop container">
-        <div class="row">
-            <img class="header_logo" src="/public/images/OL06ZA1-ai.svg" alt="" class="col-2.5">
-            <div class="header_search_input col-4">
-              <input type="text" placeholder="Я хочу найти..." class=""></input>
-              <a href="">
-                <img class="search_icon" src="/public/images/search.svg" alt="">
-              </a>
-              
-            </div>
-          
-        
+    </div>
+</nav>
 
-        
-        <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1193318",hash:"ecb0b6e481ebd4b9ec1182db572192ad",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1193318" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1692696607"></script>
-        <!-- <button class="button_normal_icon quation_button col-2.5 semibold" id="amoforms_action_btn"><img src="/public/images/chat-bubble-question.svg" alt="">
-          <text class=""> Задать вопрос</text>
-         
-        </button> -->
-        <div class="d-flex align-items-start flex-column">
-          
-            <a href="tel: 8 777 123-45-67" style="font-size: 20px;" class="mb-auto bold">8 777 123-45-67</a>
-            <div class="regular" style="font-size: 14px;">Бесплатный звонок юристу 24/7</text>
-        </div>
-        </div>
-        
-    </header>
-    <nav class="menu container">
-          <div class="buttons_menu">
-            <button class="button_normal_transparent" >
-              <a href=""></a>
-              <img src="/public/images/phone.svg" alt="">
-              <text>Заказать звонок</text>
-              
-            </button>
-            <button class="button_normal_transparent">
-              <img src="/public/images/telegram.svg" alt="">Telegram</button>
-          </div>
-          
-          <div class="menu__links">
-              <a href="#hot_line">Задать вопрос</a>
-        <a href="#about_help">Описание</a>
-        <a href="#call_center">Консультация по телефону</a>
-        <a href="#specialties">Наши юристы</a>
-        <a href="#ask_question_banner">Вопросы</a>
-        <a href="#reviews">Отзывы</a>
-          </div>
-        </nav>
-    <header class="header_mobile container">
-      <button class="hamburger" id="mobile-menu-btn">
-        <div class="btn__hamb">
-            <div></div>
-        </div>
-    </button>
-      <a href="#">
-        <img class="logo_mobile" src="/public/images/OL06ZA1-ai.svg" alt="">
-      </a>
-      <div><span class="bold"><img src="/public/images/phone.svg" style="width: 40px;" alt=""></span></div>
-          
-          
-          
-    </header>
+<div class="hero-section" >
 
-    <section class="hot_line container" id="hot_line">
-      <div class="hot_line_description">
-        <h1 class="bold">Горячая линия по оказанию юридической помощи онлайн</h1>
-        <h3>Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «UPLAWYERS», вы можете рассчитывать на прозрачные, понятные условия сотрудничества</h3>
-        <div class="hot_line__quation">
-          <button class="button_normal">Задать вопрос юристу</button> 
-          <div class="hot_line__quation_number bold"><a href="#">8 777 123-45-67</a>
-          <h4 class="regular">Бесплатный звонок юристу 24/7</h4></div>
-        </div>
-        <div class="hot_line_icon ">
-          <span class="hot_line_icon_item "><img src="/public/images/clock.svg" alt="">Круглосуточно</span>
-          <span class="hot_line_icon_item "><img src="/public/images/money-square.svg" alt="">Бесплатно</span>
-          <span class="hot_line_icon_item "><img src="/public/images/lock.svg" alt="">Конфиденциально</span>
-          <span class="hot_line_icon_item "><img src="/public/images/flash.svg" alt="">Быстро</span>
-        </div>
-        
-    
-      </div>
-    <div><img src="/public/images/Frame 1.svg" alt=""></div>
-    
-    
-    </section>
-    <section class="about_help container" id="about_help">
-      <h1 class="bold">Юридическая помощь</h1>
-        <h3>Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос. Теперь не нужно записываться на офлайн-прием и тратить время на поездку и очереди перед кабинетом.
-          Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «uplawyers», вы можете рассчитывать на прозрачные, понятные условия сотрудничества.</h3>
-    </section>
-
-    <section class="consultation container">
-      <h1 class="bold">Как получить бесплатную юридическую консультацию?</h1>
-      <h3>Задайте вопрос юристу бесплатно круглосуточно и без регистрации</h3>
-      <div class="consultation_square container">
-        <div class="consultation_square_container ">
-          <div class="consultation_square_item_up">
-            <img src="/public/images/phone.svg" alt="">
-          <h3>По телефону горячей линии</h3>
-          <h3 class="bold">
-            8 777 123-45-67
-          </h3>
-          
-          </div>
-          <div class="consultation_square_item_down">
-            <a href="#" class="bold">
-              <h3>
-                Заказать звонок
-              </h3>
-              
-            </a>
-          </div>
-        </div>
-        <div class="consultation_square_container">
-          <div class="consultation_square_item_up">
-            <img src="/public/images/reply.svg" alt="">
-          <h3>Задать свой вопрос на сайте и получить ответ онлайн</h3>
-          
-          
-          </div>
-          <div class="consultation_square_item_down">
-            <a href="#" class="bold">
-              <h3>
-                Задать вопрос
-              </h3>
-              
-            </a>
-          </div>
-        </div>
-        <div class="consultation_square_container">
-          <div class="consultation_square_item_up">
-            <img src="/public/images/chat-lines.svg" alt="">
-          <h3>Отправить запрос на обратный звонок юриста</h3>
-          
-          
-          </div>
-          <div class="consultation_square_item_down">
-            <a href="#" class="bold">
-              <h3>
-                Отправить запрос
-              </h3>
-              
-            </a>
-          </div>
-          
-        </div>
-        <div class="consultation_square_container">
-          <div class="consultation_square_item_up">
-            <img src="/public/images/building.svg" alt="">
-          <h3>Записаться на очную консультацию в офис</h3>
-          
-          
-          </div>
-          <div class="consultation_square_item_up">
-            <a href="#">
-              Записаться
-            </a>
-          </div>
-        </div>
-      </div>  
-      
-      
-      
-     
-    </section>
-
-    <section class="call_center container" id="call_center">
-     
-     <img src="/public/images/woman-working-call-center 1.svg" alt="">
-     <div class="call_center__text">
-      <h3>Звоните, мы работаем 24/7</h3>
-      <h2 class="bold">8 777 123-45-67</h2>
-     </div>
-    
-    </section>
-    <section class="help_you container" id="help_you">
-      <h1 class="bold">Как мы сможем помочь вам?</h1>
-      <div class="help_you__item_container">
-      <div class="help_you__item">
-        <div class="help_you__item_circle">
-          
-            <img src="/public/images/help_you_call.svg" alt="">
-        </div>
-        <div class="help_you__item_description">
-          <h4 class="regular">Провести бесплатную консультацию на личном приёме у нас в офисе, по телефону горячей линии <strong>8 777 123-45-67</strong> , в онлайн чате или по WhatsApp и Telegram</h4>
-        </div>
-      </div>
-      <div class="help_you__item">
-        <div class="help_you__item_circle">
-         <img src="/public/images/help_you_book.svg" alt="">
-        </div>
-        <div class="help_you__item_description">
-          <h4 class="regular">В ходе консультации будет проанализирована ваша ситуация с точки зрения законодательства Российской Федерации с последними изменениями на сегодняшний день</h4>
-        </div>
-      </div>
-      <div class="help_you__item">
-        <div class="help_you__item_circle">
-          <img src="/public/images/help_you_arrows.svg" alt="">
-        </div>
-        <div class="help_you__item_description">
-          <h4 class="regular">После чего наш специалист сможет определить все возможные пути решения вашей ситуации выявить все возможные подводные камни и подскажет как их избежать.</h4>
-        </div>
-      </div>
-      <div class="help_you__item">
-        <div class="help_you__item_circle">
-          <img src="/public/images/help_you_complite.svg" alt="">
-        </div>
-        <div class="help_you__item_description">
-          <h4 class="regular">Как показывает практика данной консультации бывает достаточно для решения вашего вопроса. Если нет, то вы всегда сможете воспользоваться нашими услугами на выгодных условиях.</h4>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="why_choise container" id="why_choise">
-      <div class="why_choise__description"><h1 class="bold">Почему стоит выбрать нас?</h1>
-        <h3 class="regular">Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос</h3>
-        <div class="why_choise__numbers">
-          <div class="why_choise__numbers_item">
-            <h2>100 тыс</h2>
-            <h4>Успешных дел</h4>
-          </div>
-          <div class="why_choise__numbers_item">
-            <h2>10 лет</h2>
-            <h4>Успешной работы</h4>
-          </div>
-          <div class="why_choise__numbers_item">
-            <h2>100</h2>
-            <h4>Юристов онлайн</h4>
-          </div>
-         
-        </div>  
-        
-      </div>
-      <div><img src="/public/images/busy_people.svg" alt=""></div>
-    </section>
-
-    <section class="callback_banner_form container">
-        <div class="callback__description">
-          <h3 class="semibold">Телефон горячей линии</h3>
-          <h1 class="bold">8 777 123-45-67</h1>
-        </div>
-
-        <div class="callback__form_container">
-          <h2 class="bold">Заказать обратный звонок</h2>
-          <div class="number__form">
-              <div class="number__form_input">
-                <h4>Номер телефона</h4>
-                <input type="number"/>
-              </div>
-              <button class="button_normal_transparent">
-                Заказать звонок
-              </button>
-          </div>
-           <h3>Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</h3>
-        </div>
-        
-    </section>
-
-    <section class="specialties container" id="specialties">
-      <h2 class="bold">Специальности наших юристов</h2>
-      <div class="specialties_blocks">
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/stroller.svg" alt=""><h3 class="semibold">По семейным делам</h3></span>
-            <h4>
-              Юрист помогает в решении жилищных, образовательных, имущественных, страховых, земельных и иных споров и вопросов по данному направлению. В зависимости от ситуации возможно применение досудебного и судебного урегулирования. Более подробную информацию получите в процессе юридической консультации
-            </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/ev-plug.svg" alt=""><h3 class="semibold">По вопросам ЖКХ</h3></span>
-            <h4>
-              С каждым годом у граждан России возникает все больше вопросов к структурам жилищно-коммунального хозяйства. Некоторых интересует, почему они должны каждый месяц платить за лифт, проживая при этом на первом этаже. А кого-то возмущает, что коммунальщики вычитывают из заработной платы людей долги по услугам. Вопросов много. И все они нуждаются в грамотной правовой оценке. Бесплатная помощь наших юристов – лучший выход из ситуации. Специалисты мгновенно оценят ситуацию, разъяснят непонятные моменты, подскажут, как правильно оформить претензию/иск и куда ее направить
-            </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/building.svg" alt=""><h3 class="semibold">По жилищному праву</h3></span>
-            <h4>
-              Квартирный вопрос из года в год остается камнем преткновения для многих граждан. Люди чуть ли не на смерть бьются за каждый причитающийся им квадратный метр. И эта борьба нередко сопровождается серьезными тратами как в виде финансов, так и нервов. Чтобы максимально защитить себя, оградить от возможных неприятных «сюрпризов» и сэкономить ресурсы, воспользуйтесь бесплатной юридической помощью. Специалисты подскажут, на что обратить внимание при покупке недвижимости, как получить разрешение на установку систем видеонаблюдения, как грамотно подойти к сделке купли-продажи и т.д.
-            </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/lot-of-cash.svg" alt=""><h3 class="semibold">По кредитам</h3></span>
-            <h4>
-              Данное направление актуально не только для отдельных граждан, но и предпринимателей, крупных предприятий. Во время бесплатной консультации наши сотрудники подскажут, как правильно вести переговоры с кредиторами, как обезопасить имущество от возможного ареста. А также ответят на многие другие вопросы, связанные с кредитованием.
-            </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/pin-alt.svg" alt=""><h3 class="semibold">По земельным делам</h3></span>
-            <h4>
-              На сегодняшний день земля – ценный актив, использовать который можно по-разному. Например, на ней можно добывать полезные ископаемые (при наличии таковых в недрах), производить высадку культурных растений, сдавать в аренду и т.д. В процессе эксплуатации земельных участков возникают разнообразные ситуации, большинство которых невозможно разрешить без грамотной юридической консультации. Получить ее можно круглосуточно и бесплатно через наш сервис.</h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/large-suitcase.svg" alt=""><h3 class="semibold">По трудовым вопросам</h3></span>
-            <h4>
-              Права трудящихся, несмотря на наличие соответствующего кодекса, постоянно нарушаются. Многие сотрудники сталкиваются с незаконными увольнениями, беспричинно лишаются оплаты отпускных, несут чрезмерную материальную ответственность и пр. Возможны и обратные ситуации, когда сами предприятия страдают от произвола персонала. Своевременное привлечение к возникшей проблеме адвоката позволяет с минимальными потерями урегулировать конфликт. Если вы столкнулись с подобной ситуацией, воспользуйтесь бесплатной юридической консультацией по телефону от «uplawyers»
-             </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/bank.svg" alt=""><h3 class="semibold">По приставам</h3></span>
-            <h4>
-              Визит пристава – это практически всегда негативные эмоции. Особенно неприятно общение, если человек не знает, как правильно себя вести с сотрудниками службы. В этом случае без консультации не обойтись. Специалисты во время бесплатного звонка раскрывают нюансы взаимодействия пристава с должником. Например, юристы расскажут, что сотрудники имеют права беспокоить человека с 6 утра до 10 вечера и т.д.
-            </h4>
-          </div>
-        </div>
-        <div class="specialties__items_container">
-          <div class="specialties__item">
-            <span><img src="/public/images/group.svg" alt=""><h3 class="semibold">По гражданским делам</h3></span>
-            <h4>
-              Юрист помогает в решении жилищных, образовательных, имущественных, страховых, земельных и иных споров и вопросов по данному направлению. В зависимости от ситуации возможно применение досудебного и судебного урегулирования. Более подробную информацию получите в процессе юридической консультации
-            </h4>
-          </div>
-        </div>
-      </div>
-     
-    </section>
-    <section class="ask_question_banner container" id="ask_question_banner">
-      <div class="text"><h1 class="bold">Задайте вопрос юристу бесплатно</h1></div>
-      <div class="number_container_form">
-        <div class="number__form">
-          <div class="number__form_input">
-            <h4>Номер телефона</h4>
-            <input type="number"/>
-          </div>
-          <button class="button_normal">
-            Заказать звонок
-          </button>
-        </div>
-        <h5 class="regular">Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</h5>
-      </div>
-      
-      <img src="/public/images/iphone.svg" alt="">
-    </section>
-
-    <section class="seo_text container">
-        <h2 class="bold">Блок для SEO текста</h2> 
-        <h3>
-          Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос. Теперь не нужно записываться на офлайн-прием и тратить время на поездку и очереди перед кабинетом.
-          <br><br>
-Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь к специалистам «UPLAWYERS», вы можете рассчитывать на прозрачные, понятные условия сотрудничества.
-        </h3>
-      <button>Показать весь текст</button>
-      </section>
-
-      <section class="reviews container" id="reviews">
-        <h2>Отзывы наших клиентов</h2>
-        <div class="reviews_slider_block">
-          <div class="reviews_slider_item_container">
-                <div class="reviews_slider_item">
-                  <div class="review_avatar">
-                    <div class="review_avatar_circle">
-                      <img src="/public/images/user_white.svg" alt="">
-                      
+        <div class="align-items-center" style="background-color: #4f4a48">
+                <div class="row">
+                <div class="col-md-6" >
+                    <div class="main_block_images_description">
+                        <img src="./../public/images/logo.svg" alt="UP Lawyers" class="logo_up_lawyers" style="max-width: 397px">  <!-- Adjust size as needed -->
+                        <img src="./../public/images/description_main_block.svg" class= "" alt="">
                     </div>
-                    <div>
-                      <h3>Вадим</h3>
-                      <h4>02 июля 2023</h4>
-                    </div>
-                  </div>
-                  <div class="review_comment">
-                    <h3>
-                      Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало намного легче
-                    </h3>
-                  </div>
-                 
-              
-                </div>
-                <div class="review_question">
-                  <h4>Вопрос:</h4>
-                  <h3>
-                    Заберут ли меня в случае общей мобилизации на войну если я
-                  </h3>
-                </div>
-          </div>
-          <div class="reviews_slider_item_container">
-            <div class="reviews_slider_item">
-              <div class="review_avatar">
-                <div class="review_avatar_circle">
-                  <img src="/public/images/user_white.svg" alt="">
-                </div>
-                <div>
-                  <h3 class="bold">Вадим</h3>
-                  <h4>02 июля 2023</h4>
-                </div>
-              </div>
-              <div class="review_comment">
-                <h3>
-                  Спасибо огромное за грамотную помощь. Ответили очень быстро, проконсультировали, подсказали и самое главное помогли в моей ситуации. Высоко квалифицированный специалист, спасибо
-                </h3>
-              </div>
-            </div>
-            <div class="review_question">
-              <h4>Вопрос:</h4>
-              <h3>
-                Заберут ли меня в случае общей мобилизации на войну если я
-              </h3>
-            </div>
-      </div>
-      <div class="reviews_slider_item_container">
-        <div class="reviews_slider_item">
-          <div class="review_avatar">
-            <div class="review_avatar_circle">
-              <img src="/public/images/user_white.svg" alt="">
-            </div>
-            <div>
-              <h3>Вадим</h3>
-              <h4>02 июля 2023</h4>
-            </div>
-          </div>
-          <div class="review_comment">
-            <h3>
-              Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало намного легче
-            </h3>
-          </div>
-          
-        </div>
-        <div class="review_question">
-          <h4>Вопрос:</h4>
-          <h3>
-            Заберут ли меня в случае общей мобилизации на войну если я
-          </h3>
-        </div>
-  </div>
-  <div class="reviews_slider_item_container">
-    <div class="reviews_slider_item">
-      <div class="review_avatar">
-        <div class="review_avatar_circle">
-          <img src="/public/images/user_white.svg" alt="">
-        </div>
-        <div>
-          <h3>Вадим</h3>
-          <h4>02 июля 2023</h4>
-        </div>
-      </div>
-      <div class="review_comment">
-        <h3>
-          Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало намного легче
-        </h3>
-      </div>
-      
-    </div>
-    <div class="review_question">
-      <h4>Вопрос:</h4>
-      <h3>
-        Заберут ли меня в случае общей мобилизации на войну если я
-      </h3>
-    </div>
-</div>
-<div class="reviews_slider_item_container">
-  <div class="reviews_slider_item">
-    <div class="review_avatar">
-      <div class="review_avatar_circle">
-        <img src="/public/images/user_white.svg" alt="">
-      </div>
-      <div>
-        <h3>Вадим</h3>
-        <h4>02 июля 2023</h4>
-      </div>
-    </div>
-    <div class="review_comment">
-      <h3>
-        Хочу поблагодарить Веру Владимировну за оказанную мне помощь, объяснила что да как, на душе стало намного легче
-      </h3>
-    </div>
-    
-  </div>
-  <div class="review_question">
-    <h4>Вопрос:</h4>
-    <h3>
-      Заберут ли меня в случае общей мобилизации на войну если я
-    </h3>
-  </div>
-</div>
-        </div>
-      </section>
 
-      <section class="lawyers_portal container">
-        <h2 class="bold">Юристы портала</h2>
+            </div>
+
+            <div class="col-md-6 d-none d-md-block" style="padding: 0">
+                <img src="./../public/images/background_first_main_block.png" alt="Professional" class="img-fluid">
+            </div>
+                </div>
+        </div>
+    </div>
+
+<section class="services-section">
+    <div class="container">
+        <div class="mb-4 text-center service-title ">
+            <h2 class="">Наши услуги</h2>
+        </div>
+
         <div class="row">
-          <div class="lawyers_portal_items col-5">
-            <div class="lawyers_item_protal_container">
-              <div class="lawyers_item_protal">
-                  <div class="lawyers_avatar">
-                    <img src="/public/images/lawyers_avatar.svg" alt="">
-                  </div>
-                  <div>
-                    <h3>
-                      Гурьянова Вера Владимировна
-                    </h3>
-                    <h4>Юрист, Самара</h4>
-                    <h4>693 консультации</h4>
-                  </div>
-              </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/abonent_payment.svg"></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Абонентское юридическое обслуживание</h5>
+                    </div>
+                </div>
             </div>
-            <div class="lawyers_item_protal_container">
-              <div class="lawyers_item_protal">
-                  <div class="lawyers_avatar">
-                    <img src="/public/images/lawyers_avatar.svg" alt="">
-                  </div>
-                  <div>
-                    <h3>
-                      Гурьянова Вера Владимировна
-                    </h3>
-                    <h4>Юрист, Самара</h4>
-                    <h4>693 консультации</h4>
-                  </div>
-              </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/online_consultation.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Онлайн консультации по бизнесу</h5>
+                    </div>
+                </div>
             </div>
-            <div class="lawyers_item_protal_container">
-              <div class="lawyers_item_protal">
-                  <div class="lawyers_avatar">
-                    <img src="/public/images/lawyers_avatar.svg" alt="">
-                  </div>
-                  <div>
-                    <h3>
-                      Гурьянова Вера Владимировна
-                    </h3>
-                    <h4>Юрист, Самара</h4>
-                    <h4>693 консультации</h4>
-                  </div>
-              </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/checkout_invester.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Оформление инвестиционных сделок</h5>
+                    </div>
+                </div>
             </div>
-            <div class="lawyers_item_protal_container">
-              <div class="lawyers_item_protal">
-                  <div class="lawyers_avatar">
-                    <img src="/public/images/lawyers_avatar.svg" alt="">
-                  </div>
-                  <div>
-                    <h3>
-                      Гурьянова Вера Владимировна
-                    </h3>
-                    <h4>Юрист, Самара</h4>
-                    <h4>693 консультации</h4>
-                  </div>
-              </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/РЕГИСТРАЦИЯ%20ЮРИДИЧЕС.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Регистрация юридических лиц, в том числе с иностранным участием</h5>
+                    </div>
+                </div>
             </div>
-            <button>
-              Все наши юристы
-            </button>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/ТРУДОВОЕ%20ПРАВО.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Трудовое право</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/СУДЕБНОЕ%20ПРЕДСТАВИТЕ.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Судебное представительство</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <div class="service-icon mb-2"><img src="./../public/images/ИНТЕЛЛЕКТУАЛЬНАЯ%20СОБ.svg" alt=""></div> <!-- Replace with actual icons -->
+                        <h5 class="card-title">Интеллектуальная собственность</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for each service -->
+            <!-- ... -->
+        </div>
+    </div>
+</section>
+
+
+
+<div class="contact-form-section" id="online_consultation">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form Column -->
+            <div class="col-md-3">
+                <form class="contact-form">
+                    <h3>Оставьте заявку</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block">Отправить</button>
+                </form>
+            </div>
+            <!-- Services Column -->
+            <div class="col-md-5">
+                <div class="service-list">
+                    <h3>Онлайн консультации по бизнесу и оформлению инвестиций</h3>
+                    <div class="complites">
+                    <h4>На консультации из вашей ситуации:</h4>
+                    <!-- List of Services -->
+                        <div class="complites_text">
+                    <div class="service-item">
+                        <img src="./../public/images/complite.svg" alt=""> Проводим юридический разбор бизнес-процессов
+                    </div>
+                    <div class="service-item">
+                        <img src="./../public/images/complite.svg" alt=""> Подбираем наиболее приемлемые пути работы с партнерами
+                    </div>
+                    <div class="service-item">
+                        <img src="./../public/images/complite.svg" alt=""> Подбираем наиболее приемлемые пути работы с партнерами
+                    </div>
+                    <div class="service-item">
+                        <img src="./../public/images/complite.svg" alt=""> Подбираем наиболее приемлемые пути работы с партнерами
+                    </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for each service -->
+                    <!-- ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="feature-section">
+    <div class="row">
+        <div class="col-12">
+            <div class="feature-block">
+                <div class="feature-block-item">
+                    <img src="./../public/images/money.svg" alt="Coins" class="feature-icon"> <!-- Replace with your icon -->
+                    <span class="feature-text">50 000 ТЕНГЕ</span>
+                </div>
+                <div class="feature-block-item">
+                    <img src="./../public/images/time.svg" alt="Clock" class="feature-icon"> <!-- Replace with your icon -->
+                    <span class="feature-text">1 ЧАС</span>
+                </div>
+                <div class="feature-description">
+                    <p>ПО РЕЗУЛЬТАТАМ КОНСУЛЬТАЦИИ ДАЮ КРАТКОЕ ПИСЬМЕННОЕ РЕЗЮМЕ ОБ ОСНОВНЫХ ВЫВОДАХ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="container pricing-section">
+    <div class="row">
+      <div class="col">
+      <div class="row  pricing-card-block">
+        <div class="col-sm-3 pricing-card-block-title">
+        
+          <h3>ТАРИФЫ АБОНЕНТСКОГО ЮРИДИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>
+        </div>
+        <div class="col-sm-3 pricing-card">
+            <img class="icon"  src="./../public/images/basic_tarif.svg"></img>
+            <h3>BASIC</h3>
+            <p>100 000 ТНГ (В МЕСЯЦ) <br> до 7 запросов</p>
           </div>
-          <div class="lawyers_form col-6">
+        <div class="col-sm-3 pricing-card">
+            <img class="icon"  src="./../public/images/basic_tarif.svg"></img>
+          <h3>STANDART</h3>
+          <p>150 000 ТНГ (В МЕСЯЦ) <br> до 12 запросов</p>
+        </div>
+        <div class="col-sm-3 pricing-card">
+          <img class="icon"  src="./../public/images/basic_tarif.svg"></img>
+          <h3>PREMIUM</h3>
+          <p>300 000 ТНГ (В МЕСЯЦ) <br> до 25 запросов</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="description-toggle" data-toggle="collapse" data-target="#detailedDescription">
+        <img class="arrow_down" src="./../public/images/arrow_down.svg" aria-hidden="true"></img>
+      </div>
+    <div class="row">
+      <div class="col">
+        <div class="collapse" id="detailedDescription">
+            <div class="container services-breakdown">
+                <!-- Service Rows -->
+                <div class="row">
+                  <div class="col-md-3">Устные и письменные консультации</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                </div>
+                <!-- Repeat for each service -->
+                <div class="row">
+                  <div class="col-md-3">Правовой анализ юридических документов, экспертиза</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                </div>
+                <!-- ... Other rows ... -->
+                <div class="row">
+                  <div class="col-md-3">Представительство в суде</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                  <div class="col-md-3 plus text-center">+</div>
+                </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
   
-          </div>
+  
+
+
+<div class="advantages-section py-5" id="advantages-section">
+    <div class="container">
+        <h2 class="text-center text-white mb-4">Преимущества юридического аутсорсинга</h2>
+        <div class="row">
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/economic_icon.svg" alt="Экономическая эффективность" class="mb-3">
+                <div class="advantages-item-text">
+                <h3>Экономическая эффективность</h3>
+                <p>Использование юридического аутсорсинга позволяет сэкономить средства на зарплате и стандартных накладных расходах, связанных с наймом постоянного юриста. Вместо постоянного штата вы платите только за необходимые услуги или за конкретные проекты.</p>
+                </div>
+                </div>
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/ecspertiza.svg" alt="Экспертиза и разнообразие опыта" class="mb-3">
+                <div class="advantages-item-text">
+                <h3 style="text-align: center!important;">Экспертиза и разнообразие опыта</h3>
+                    <p style="text-align: center!important;">Юридические аутсорсинговые компании имеют команду профессионалов с различными специализациями. Они могут предоставить широкий спектр юридических услуг, а не только ограничиться одним человеком. Это позволяет вам получить консультации и помощь от опытных специалистов в разных областях права.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/arrows.svg" alt="Гибкость" class="mb-3">
+                <div class="advantages-item-text">
+                <h3>Гибкость</h3>
+                <p>Юридический аутсорсинг позволяет вам регулировать объем работ и периоды, когда требуются услуги юристов. Вы можете легко добавлять или удалять услуги в соответствии с потребностями вашего бизнеса. Это особенно полезно при сезонных или проектных задачах.</p>
+                </div>
+                </div>
         </div>
-      </section>
-      
-      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="./modules/script.js"></script>
+    </div>
+</div>
+
+
+
+<div class="how-we-work-section  py-5" id="how-we-work-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Как мы работаем</h2>
+        <div class="row">
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/human_with_settings.svg" alt="Экономическая эффективность" class="mb-3">
+                <div class="advantages-item-text">
+                    <h3>Экономическая эффективность</h3>
+                    <p>Использование юридического аутсорсинга позволяет сэкономить средства на зарплате и стандартных накладных расходах, связанных с наймом постоянного юриста. Вместо постоянного штата вы платите только за необходимые услуги или за конкретные проекты.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/hight_level.svg" alt="Экспертиза и разнообразие опыта" class="mb-3">
+                <div class="advantages-item-text" >
+                    <h3 style="text-align: center!important;">Экспертиза и разнообразие опыта</h3>
+                    <p style="text-align: center!important;">Юридические аутсорсинговые компании имеют команду профессионалов с различными специализациями. Они могут предоставить широкий спектр юридических услуг, а не только ограничиться одним человеком. Это позволяет вам получить консультации и помощь от опытных специалистов в разных областях права.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center advantages-item">
+                <img src="./../public/images/result.svg" alt="Гибкость" class="mb-3">
+                <div class="advantages-item-text">
+                    <h3>Гибкость</h3>
+                    <p>Юридический аутсорсинг позволяет вам регулировать объем работ и периоды, когда требуются услуги юристов. Вы можете легко добавлять или удалять услуги в соответствии с потребностями вашего бизнеса. Это особенно полезно при сезонных или проектных задачах.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="testimonials-section" style="" id="testimonials-section">
+    <div class="container">
+        <h2 class="text-left mb-4">Отзывы</h2>
+        <div class="testimonial  text-left">
+            <p class="mb-0"><strong>Шанайбаева Жулдыз Абзаловна - Директор TOO «FINPARK.KZ»</strong></p>
+            <p>Благодарим юридическую компанию «UP LAWYERS» – нашего лучшего и надежного партнера в решении юридических вопросов. С компаний «UP LAWYERS» мы сотрудничаем с 2020 года по различным юридическим вопросам. Ко всем нашим запросам сотрудники компании «UP LAWYERS» подходят профессионально. Мы всегда уверенны, что все будет сделано быстро и качественно: составление сложного инвестиционного договора или написание небольшой претензии. Мы глубоко ценим их высокий уровень подготовки, честность и ориентированность на положительный результат.</p>
+        </div>
+        <!-- Add navigation buttons or other elements as needed -->
+    </div>
+</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
