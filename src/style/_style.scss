@@ -133,11 +133,7 @@ $background-color_1: #ffffff;
   margin-bottom: 10px;
   gap: 20px;
 }
-.service-icon {
-  img {
-    width: 30px;
-  }
-}
+
 .service-text {
   color: $color_1;
 }
@@ -208,6 +204,7 @@ $background-color_1: #ffffff;
 
 
   .hero-section {
+    padding-top: 100px;
     .image_main_block
     {
 
@@ -221,7 +218,15 @@ $background-color_1: #ffffff;
       font-weight: 1000;
       color: inherit;
     }
-
+    .row{
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: nowrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      justify-content: space-between;
+    }
 
 
 
@@ -267,8 +272,10 @@ $background-color_1: #ffffff;
   {
     display: flex;
     flex-direction: column;
-    gap: 91px;
-    padding-top: 91px;
+    gap: 7px;
+    padding-top: 39px;/home/murat_developer/Documents/DRAFTS/urist_online-main/dist
+  /home/murat_developer/Documents/DRAFTS/urist_online-main/node_modules
+  /home/murat_developer/Documents/DRAFTS/urist_online-main/package.json
     align-items: center;
   }
 
@@ -340,9 +347,9 @@ $background-color_1: #ffffff;
 
 
 @media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1400px;
-  }
+  // .container, .container-lg, .container-md, .container-sm, .container-xl {
+  //   max-width: 1400px;
+  // }
 
 
 
@@ -355,12 +362,12 @@ $background-color_1: #ffffff;
   background-size: cover;
   padding: 40px 0;
    /* Optional: for better readability over the background image */
-  @media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1380px;
+  // @media (min-width: 1200px) {
+  //   .container, .container-lg, .container-md, .container-sm, .container-xl {
+  //     max-width: 1380px;
 
-    }
-  }
+  //   }
+  // }
   .testimonial p {
     color: #6E6B69; /* For white text */
     margin-bottom: 1rem;
@@ -397,7 +404,7 @@ $background-color_1: #ffffff;
 
   .arrow_down{
     position: relative;
-    left: 48%;
+    left: 40%;
   }
 }
 .description-toggle i {
@@ -450,7 +457,19 @@ $background-color_1: #ffffff;
   background-color: #ffffff; /* White background */
   padding: 20px;
   font-family: Arial, sans-serif; /* Assuming Arial is used */
+  .row{
+    flex-wrap: nowrap;
+  }
 }
+
+.services-breakdown{
+ .row{
+   .tarif_item{
+    display: inline-block;
+   } 
+ }  
+}
+
 .services-breakdown .row:not(:last-child) {
   border-bottom: 1px solid #000; /* Black border for separation */
   padding-bottom: 10px; /* Spacing below the row content */
@@ -468,11 +487,13 @@ $background-color_1: #ffffff;
 }
 /* Custom styling for plus and minus signs */
 .services-breakdown .plus {
-  color: green; /* Plus sign in green */
+  color: green;
+  font-weight: 700; /* Plus sign in green */
   
 }
 .services-breakdown .minus {
   color: red; /* Minus sign in red */
+  font-weight: 700;
 }
 
 
@@ -488,3 +509,88 @@ $background-color_1: #ffffff;
     color: #b2975b;
   }
 }
+
+
+.pricing-section .pricing-card-block-title h3 {
+    text-align: center;
+}
+
+.pricing-section .pricing-card h3,
+.pricing-section .pricing-card p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.pricing-section .icon {
+    width: 100%; /* Adjust icon width as necessary */
+    max-width: 80px; /* Set a max-width for the icon */
+    margin: 0 auto 10px; /* Center the icon and add some space below */
+}
+
+@media (max-width: 768px) {
+
+
+
+  .advantages-section h2 {
+    max-width: 817px;
+    height: 27px;
+    font-weight: 1000;
+    font-size: 2rem;
+    padding-bottom: 141px;
+}
+
+    .pricing-section .pricing-card-block-title,
+    .pricing-section .pricing-card {
+        text-align: center;
+        h3{
+          font-size: 13px;
+        }
+    }
+
+    .pricing-section .pricing-card h3,
+    .pricing-section .pricing-card p {
+        font-size: 0.7rem; /* Scale down font size */
+    }
+
+    .pricing-section .icon {
+        max-width: 60px; /* Scale down icon size */
+    }
+
+    .description-toggle {
+        text-align: center;
+    }
+
+    .description-toggle .arrow_down {
+        width: 30px; /* Scale down arrow size */
+        margin: 10px auto; /* Center the arrow below the pricing cards */
+    }
+}
+
+@media (min-width: 1024px) {
+  .main_block_images_description
+  {
+    img:first-child{
+      width: 100%;
+    }
+    
+
+    img:last-child{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main_block_images_description
+  {
+    img:first-child{
+      width: 100%;
+    }
+    
+
+    img:last-child{
+      width: 100%;
+    }
+  }
+}
+
+
