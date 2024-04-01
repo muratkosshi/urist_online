@@ -86,3 +86,44 @@
 //       });
 //     });
 //   });
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Элемент для отображения сообщения об отправке
+        const formMessage = document.getElementById('formMessage');
+
+        const formData = new FormData(this);
+        const data = {
+            fields: {
+                NAME: formData.get("name"),
+                PHONE: [{ VALUE: formData.get("phone"), VALUE_TYPE: "WORK" }],
+                EMAIL: [{ VALUE: formData.get("email"), VALUE_TYPE: "WORK" }],
+                SOURCE_ID: "WEB" // Источник лида указан как "веб-сайт"
+            }
+        };
+
+        fetch('https://uplawyers.bitrix24.kz/rest/6/maupnmudgq3fgfzz/crm.lead.add.json', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Успех:', data);
+                // Устанавливаем сообщение и отображаем его
+                formMessage.className = "alert alert-success"; // Добавляем классы для стилизации
+                formMessage.innerText = 'Ваша заявка успешно отправлена! С вами свяжутся в ближайшее время.';
+                formMessage.style.display = 'block'; // Показываем сообщение
+            })
+            .catch((error) => {
+                console.error('Ошибка:', error);
+                // Отображаем сообщение об ошибке
+                formMessage.className = "alert alert-danger"; // Добавляем классы для стилизации
+                formMessage.innerText = 'Ошибка при отправке заявки. Пожалуйста, попробуйте ещё раз.';
+                formMessage.style.display = 'block'; // Показываем сообщение
+            });
+    });
+});

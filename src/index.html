@@ -140,7 +140,7 @@
         <div class="row">
             <!-- Contact Form Column -->
             <div class="col-md-3">
-                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <form class="contact-form" name="contact" method="POST">
                     <h3>Оставьте заявку</h3>
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Имя">
@@ -153,6 +153,9 @@
                     </div>
                     <button type="submit" class="btn btn-dark btn-block">Отправить</button>
                 </form>
+                <div id="formResult">
+                </div>
+                <div id="formMessage" style="display: none; margin-top: 20px;" class="alert" role="alert"></div>
             </div>
             <!-- Services Column -->
             <div class="col-md-5">
